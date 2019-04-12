@@ -59,7 +59,7 @@ export class AuthService extends IonicAuth  {
     }else{
       this.authConfig = { 
         identity_client: 'appAuthImplicit', 
-        identity_server: 'https://dev-197427.okta.com/oauth2/default', 
+        identity_server: 'https://192.68.0.1/', 
         redirect_url: 'http://localhost:8100/implicit/authcallback', 
         scopes: 'openid profile offline_access',
         usePkce: false,

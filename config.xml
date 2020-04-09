@@ -86,7 +86,7 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="~2.2.0" />
     <plugin name="cordova-plugin-safariviewcontroller" spec="~1.6.0" />
     <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/Onegini/cordova-plugin-inappbrowser.git" />
-    <plugin name="cordova-plugin-secure-storage" spec="~3.0.2" />
+    <plugin name="cordova-plugin-secure-storage-echo" spec="^5.0.1" />
     <plugin name="cordova-plugin-customurlscheme" spec="~5.0.0">
         <variable name="URL_SCHEME" value="appauth" />
     </plugin>

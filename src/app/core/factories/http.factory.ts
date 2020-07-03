@@ -1,8 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Platform } from '@ionic/angular';
-import { CordovaRequestor } from 'ionic-appauth/lib/cordova';
+import { CordovaRequestor, XhrSettings } from 'ionic-appauth/lib/cordova';
 import { NgHttpService } from '../ng-http.service';
 
-export let httpFactory = (platform: Platform, httpClient: HttpClient) => {
-    return platform.is('cordova') ? new CordovaRequestor() : new NgHttpService(httpClient);
+export class MyRequestor extends CordovaRequestor {
+
+    public xhr<T>(settings: XhrSettings): Promise<T> {
+        alert(settings.url);
+        return super.xhr(settings);
+    }
 }
+
+export let httpFactory = (platform: Platform, httpClient: HttpClient) => {
+    return platform.is('cordova') ? new MyRequestor() : new NgHttpService(httpClient);
+};

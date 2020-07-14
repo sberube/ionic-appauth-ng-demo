@@ -6,7 +6,6 @@ import { NgHttpService } from '../ng-http.service';
 export class MyRequestor extends CordovaRequestor {
 
     public xhr<T>(settings: XhrSettings): Promise<T> {
-        alert(settings.url);
         return super.xhr(settings);
     }
 }

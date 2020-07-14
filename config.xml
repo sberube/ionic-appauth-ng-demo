@@ -12,9 +12,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preferance name="android-usesCleartextTraffic" value="true" />
+    <preference name="android-usesCleartextTraffic" value="true" />
     <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="22" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
@@ -88,7 +88,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="https://github.com/Onegini/cordova-plugin-inappbrowser.git" />
     <plugin name="cordova-plugin-secure-storage-echo" spec="^5.0.1" />
     <plugin name="cordova-plugin-customurlscheme" spec="~5.0.0">
-        <variable name="URL_SCHEME" value="appauth" />
+        <variable name="URL_SCHEME" value="com.btxmobile.app" />
     </plugin>
     <plugin name="cordova-plugin-advanced-http" spec="~2.4.1" />
     <engine name="android" spec="8.1.0" />

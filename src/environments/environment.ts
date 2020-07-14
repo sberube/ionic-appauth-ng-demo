@@ -7,8 +7,8 @@ export const environment = {
   auth_config: {
     identity_client: 'mobile-app',
     identity_server: 'https://btxm-authz-api-qa.azurewebsites.net',
-    redirect_url: 'appauth://implicit/authcallback',
-    end_session_redirect_url: 'appauth://implicit/endsession',
+    redirect_url: 'com.btxmobile.app://implicit/authcallback',
+    end_session_redirect_url: 'com.btxmobile.app://implicit/endsession',
     scopes: 'openid profile email offline_access api.profile',
     usePkce: true
   }

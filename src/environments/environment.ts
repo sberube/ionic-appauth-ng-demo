@@ -4,12 +4,22 @@
 
 export const environment = {
   production: false,
+
+  // auth_config: {
+  //   identity_client: 'interactive.confidential.short',
+  //   identity_server: 'https://demo.identityserver.io',
+  //   redirect_url: 'appauth://implicit/authcallback',
+  //   end_session_redirect_url: 'appauth://implicit/endsession',
+  //   scopes: 'openid profile email offline_access',
+  //   usePkce: true
+  // }
+
   auth_config: {
-    identity_client: 'interactive.confidential',
-    identity_server: 'https://demo.identityserver.io/',
+    identity_client: 'mobile-app',
+    identity_server: 'https://btxm-authz-api-qa.azurewebsites.net',
     redirect_url: 'appauth://implicit/authcallback',
     end_session_redirect_url: 'appauth://implicit/endsession',
-    scopes: 'openid profile email offline_access',
+    scopes: 'openid email profile offline_access api.profile',
     usePkce: true
   }
 };
